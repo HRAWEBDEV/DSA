@@ -12,6 +12,9 @@ class LinkedList {
   this.tail = newNode;
   this.length = 1;
  }
+ get size() {
+  return this.length;
+ }
  getSearchIndex(index) {
   return index >= 0 ? index : this.length + index;
  }
